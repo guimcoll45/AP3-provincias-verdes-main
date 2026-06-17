@@ -5,10 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexionDB {
-    // ⚠️ MODIFICA ESTOS DATOS CON LOS TUYOS
+    // ⚠️ CONFIGURACIÓN DE BASE DE DATOS - SIN DATOS PRIVADOS
+    // Instrucciones para quien lo descargue: 
+    // Reemplazar por tus datos locales: usuario="root", contraseña="" (o la tuya)
     private static final String URL = "jdbc:mysql://localhost:3306/provincias_verdes";
-    private static final String USUARIO = "root";
-    private static final String CLAVE = "tu_contraseña";
+    private static final String USUARIO = "TU_USUARIO_MYSQL";
+    private static final String CLAVE = "TU_CONTRASEÑA_MYSQL";
 
     public static Connection obtenerConexion() {
         Connection conexion = null;
@@ -18,7 +20,7 @@ public class ConexionDB {
         } catch (ClassNotFoundException e) {
             System.out.println("❌ Error: Driver no encontrado -> " + e.getMessage());
         } catch (SQLException e) {
-            System.out.println("❌ Error de conexión -> " + e.getMessage());
+            System.out.println("❌ Error de conexión: Verifique usuario, contraseña y que la BD exista -> " + e.getMessage());
         }
         return conexion;
     }
@@ -28,7 +30,7 @@ public class ConexionDB {
             try {
                 conexion.close();
             } catch (SQLException e) {
-                System.out.println("⚠️ Error al cerrar -> " + e.getMessage());
+                System.out.println("⚠️ Error al cerrar conexión -> " + e.getMessage());
             }
         }
     }
