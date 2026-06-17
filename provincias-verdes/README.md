@@ -14,7 +14,9 @@ Trabajo Práctico de Programación Orientada a Objetos.
 
 ## ⚙️ Configuración
 1. Ejecutar el script `sql/provincias_verdes.sql` en tu gestor de base de datos.
-2. Modificar usuario y contraseña en `src/com/provinciasverdes/persistencia/ConexionDB.java`.
+2. Abrir `src/com/provinciasverdes/persistencia/ConexionDB.java` y reemplazar:
+   - `TU_USUARIO_MYSQL` → por tu usuario (ej: `root`)
+   - `TU_CONTRASEÑA_MYSQL` → por tu contraseña de MySQL (si no tiene, dejar vacío)
 
 ## 🚀 Ejecución
 1. Compilar:
