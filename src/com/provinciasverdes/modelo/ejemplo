@@ -1,2 +1,11 @@
-public class Usuario extends EntidadBase { ... }
-public class Ubicacion extends EntidadBase { ... }
+// En Usuario.java
+@Override
+public String mostrarDatos() {
+    return "Usuario [ID=" + getId() + ", Nombre=" + nombre + ", Correo=" + correo + ", Perfil=" + perfil + "]";
+}
+
+// En Ubicacion.java
+@Override
+public String mostrarDatos() {
+    return "Ubicacion [ID=" + getId() + ", Provincia=" + provincia + ", Dirección=" + direccion + "]";
+}
