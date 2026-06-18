@@ -1,11 +1,5 @@
-package com.provinciasverdes.modelo;
-public abstract class EntidadBase {
-    protected int id;
-    public EntidadBase() {}
-    public EntidadBase(int id) { this.id = id; }
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public abstract String mostrarDatos(); // Método sin implementar
-    @Override
-    public String toString() { return "ID: " + id; }
-}
+// Ejemplo en Usuario.java
+private String nombre;
+private String correo;
+private String contrasena;
+private String perfil;
