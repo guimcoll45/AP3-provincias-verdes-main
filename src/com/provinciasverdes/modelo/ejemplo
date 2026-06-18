@@ -1,8 +1,1 @@
-public Usuario() { super(); } // Vacío
-public Usuario(int id, String nombre, String correo, String contrasena, String perfil) {
-    super(id); // Llama a EntidadBase
-    this.nombre = nombre;
-    this.correo = correo;
-    this.contrasena = contrasena;
-    this.perfil = perfil;
-}
+List<Usuario> lista = new ArrayList<>();
