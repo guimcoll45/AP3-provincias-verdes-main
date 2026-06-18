@@ -1,5 +1,2 @@
-// Ejemplo en Usuario.java
-private String nombre;
-private String correo;
-private String contrasena;
-private String perfil;
+public class Usuario extends EntidadBase { ... }
+public class Ubicacion extends EntidadBase { ... }
