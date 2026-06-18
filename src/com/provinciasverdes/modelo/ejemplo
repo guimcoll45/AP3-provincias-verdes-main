@@ -1,11 +1,7 @@
-// En Usuario.java
-@Override
-public String mostrarDatos() {
-    return "Usuario [ID=" + getId() + ", Nombre=" + nombre + ", Correo=" + correo + ", Perfil=" + perfil + "]";
+// Ejemplo validación de número
+while (!scanner.hasNextDouble()) { 
+    System.out.print("Ingrese un número válido: ");
+    scanner.next();
 }
-
-// En Ubicacion.java
-@Override
-public String mostrarDatos() {
-    return "Ubicacion [ID=" + getId() + ", Provincia=" + provincia + ", Dirección=" + direccion + "]";
-}
+double lat = scanner.nextDouble();
+scanner.nextLine(); // Limpieza de buffer (corrección aplicada)
