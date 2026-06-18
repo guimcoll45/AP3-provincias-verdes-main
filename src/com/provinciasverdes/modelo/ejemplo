@@ -1,7 +1,8 @@
-// Ejemplo validación de número
-while (!scanner.hasNextDouble()) { 
-    System.out.print("Ingrese un número válido: ");
-    scanner.next();
+public Usuario() { super(); } // Vacío
+public Usuario(int id, String nombre, String correo, String contrasena, String perfil) {
+    super(id); // Llama a EntidadBase
+    this.nombre = nombre;
+    this.correo = correo;
+    this.contrasena = contrasena;
+    this.perfil = perfil;
 }
-double lat = scanner.nextDouble();
-scanner.nextLine(); // Limpieza de buffer (corrección aplicada)
